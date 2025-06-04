@@ -17,6 +17,7 @@ This project uses Laravel and React. Follow these steps to set up the environmen
    ```bash
    # edit .env with your MySQL credentials
    php artisan migrate --ansi
+   php artisan db:seed --ansi # creates default roles and admin user
    ```
 6. Build frontend assets:
    ```bash
