@@ -13,9 +13,9 @@ This project uses Laravel and React. Follow these steps to set up the environmen
    ```bash
    npm install
    ```
-5. Create the SQLite database and run migrations:
+5. Configure a MySQL database and run migrations:
    ```bash
-   touch database/database.sqlite
+   # edit .env with your MySQL credentials
    php artisan migrate --ansi
    ```
 6. Build frontend assets:
