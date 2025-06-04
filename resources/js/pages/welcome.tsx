@@ -7,7 +7,6 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
 import {
   Rocket,
   Layers,
@@ -20,8 +19,6 @@ import {
 /**
  * ✨  Monochrome landing — palette strictly ⚫️⚪️ + greys.
  */
-const accent = "#FFFFFF"; // white accent used sparingly
-const glow = "#ffffff0d"; // subtle white glow for radial bg
 
 const fade = {
   hidden: { opacity: 0, y: 24 },
@@ -201,7 +198,7 @@ function Faqs() {
         Frequently Asked Questions
       </motion.h2>
       <div className="mx-auto max-w-2xl divide-y divide-zinc-800 px-6">
-        {faqs.map((f, i) => (
+        {faqs.map((f) => (
           <details key={f.q} className="group py-6">
             <summary className="flex cursor-pointer items-center justify-between text-lg font-medium text-white">
               {f.q}
